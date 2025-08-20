@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat Reservation</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Boat Reservation Form</h2>
+        <form id="reservationForm" action="booking.php" method="post">
+            <!-- Full Name -->
+            <label for="full_Name">Full Name:</label>
+            <input type="text" id="full_Name" name="full_Name" placeholder="Enter your full name" 
+                   pattern="[A-Za-z ]+" 
+                   title="Name should contain only alphabets and spaces." 
+                   required>
+    
+            <!-- Phone Number -->
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter 10-digit phone number"
+                   pattern="\d{10}" 
+                   maxlength="10"
+                   title="Phone number must be exactly 10 digits." 
+                   required>
+    
+            <!-- Number of Passengers -->
+            <label for="passengers">Number of Passengers:</label>
+            <input type="number" id="passengers" name="passengers" min="1" max="50" placeholder="Enter number of passengers" required>
+    
+            <!-- Date & Time Slots -->
+            <label for="booking_datetime">Select Date & Time:</label>
+            <select id="booking_datetime" name="booking_datetime" required>
+                <option value="" disabled selected>Choose a date & time</option>
+                <optgroup label="April 2025">
+                    <option value="15 April 2025 - 09:00 AM - 11:00 AM">15 April 2025 - 09:00 AM - 11:00 AM</option>
+                    <option value="30 April 2025 - 02:00 PM - 04:00 PM">30 April 2025 - 02:00 PM - 04:00 PM</option>
+                </optgroup>
+                <optgroup label="May 2025">
+                    <option value="5 May 2025 - 09:00 AM - 11:00 AM">5 May 2025 - 09:00 AM - 11:00 AM</option>
+                    <option value="20 May 2025 - 02:00 PM - 04:00 PM">20 April 2025 - 02:00 PM - 04:00 PM</option>
+                </optgroup>
+                <optgroup label="June 2025">
+                    <option value="10 June 2025 - 09:00 AM - 11:00 AM">10 June 2025 - 09:00 AM - 11:00 AM</option>
+                    <option value="20 June 2025 - 02:00 PM - 04:00 PM">20 June 2025 - 02:00 PM - 04:00 PM</option>
+                </optgroup>
+            </select>
+    
+            <button type="submit">Reserve Now</button>
+        </form>
+    </div>
+    
+
+    
+
+</body>
+</html>

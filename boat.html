@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEABOOKER - Boat Management</title>
+    <link rel="stylesheet" href="boat.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>SEABOOKER</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html">Bookboat</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h2>Available Boats</h2>
+
+    <section class="boat-listing">
+        <div class="boat-item">
+            <img src="https://i.ibb.co/XxLBMf85/luxury-boat.jpg" alt="Luxury Yacht">
+            <div class="boat-info">
+                <h3>Luxury Yacht</h3>
+                <p>Type: Yacht</p>
+                <p>Price: ₹600/Hr</p>
+                <button onclick="openPopup('Luxury Yacht', 'Yacht', '₹600/Hr', '15 Persons', 'Captain John', 'https://i.ibb.co/XxLBMf85/luxury-boat.jpg')">View Details</button>
+            </div>
+        </div>
+
+        <div class="boat-item">
+            <img src="https://i.ibb.co/k69rx3GC/speed-boat.jpg" alt="Speed Boat">
+            <div class="boat-info">
+                <h3>Speed Boat</h3>
+                <p>Type: Boat</p>
+                <p>Price: ₹300/Hr</p>
+                <button onclick="openPopup('Speed Boat', 'Boat', '₹300/Hr', '8 Persons', 'Captain Smith', 'https://i.ibb.co/k69rx3GC/speed-boat.jpg')">View Details</button>
+            </div>
+        </div>
+
+
+        <div class="boat-item">
+            <img src="https://i.ibb.co/WvjpNPdD/sail-boat.jpg" alt="Sail Boat">
+            <div class="boat-info">
+                <h3>Sail Boat</h3>
+                <p>Type: Boat</p>
+                <p>Price: ₹200/Hr</p>
+                <button onclick="openPopup('Sail Boat', 'Boat', '₹200/Hr', '6 Persons', 'Captain Ron', 'https://i.ibb.co/WvjpNPdD/sail-boat.jpg')">View Details</button>
+            </div>
+        </div>
+
+        <div class="boat-item">
+            <img src="https://i.ibb.co/XxKJFMX7/Karnika-Cruise-Liner-by-Jalesh-Cruises-Bindu-Gopal-Rao-Freelance-Writer-Photographer.jpg" alt="Luxury Cruise">
+            <div class="boat-info">
+                <h3>Luxury Cruise</h3>
+                <p>Type: Cruise</p>
+                <p>Price: ₹1500/Hr, ₹10000/Day</p>
+                <button onclick="openPopup('Luxury Cruise', 'Cruise', '₹1500/Hr, ₹10000/Day', '500 Persons', 'Captain Ron', 'https://i.ibb.co/XxKJFMX7/Karnika-Cruise-Liner-by-Jalesh-Cruises-Bindu-Gopal-Rao-Freelance-Writer-Photographer.jpg')">View Details</button>
+            </div>
+        </div>
+        <div class="boat-item">
+            <img src="https://i.ibb.co/CsMy9SDd/bowrider-boat.jpg">
+            <div class="boat-info">
+                <h3>Bowrider Boat</h3>
+                <p>Type: Boat</p>
+                <p>Price: ₹1000/Hr</p>
+                <button onclick="openPopup('Bowrider Boat', 'Boat', '₹1000/Hr', '6 Persons', 'Captain Ron', 'https://i.ibb.co/CsMy9SDd/bowrider-boat.jpg')">View Details</button>
+            </div>
+        </div>
+        <div class="boat-item">
+            <img src="https://i.ibb.co/Tqg6x38R/deck-boat.jpg">
+            <div class="boat-info">
+                <h3>Deck Boat</h3>
+                <p>Type: Boat</p>
+                <p>Price: ₹1000/Hr</p>
+                <button onclick="openPopup('Deck Boat', 'Boat', '₹1000/Hr', '1 Persons', 'self-ride', 'https://i.ibb.co/Tqg6x38R/deck-boat.jpg')">View Details</button>
+            </div>
+        </div>
+        <div class="boat-item">
+            <img src="https://i.ibb.co/dsHjdr6t/pontoon-boat.jpg">
+            <div class="boat-info">
+                <h3>Pontoon Boat</h3>
+                <p>Type: Boat</p>
+                <p>Price: ₹50000/2Hr</p>
+                <button onclick="openPopup('Pontoon Boat', 'Boat', '₹50000/Hr', '16 Persons', 'Captain Ron', 'https://i.ibb.co/dsHjdr6t/pontoon-boat.jpg')">View Details</button>
+            </div>
+        </div>
+        <div class="boat-item">
+            <img src="https://i.ibb.co/SwPqPyxQ/cabin-cruiser.jpg">
+            <div class="boat-info">
+                <h3>Cabin Cruise</h3>
+                <p>Type:  Cruise</p>
+                <p>Price: ₹46000/Day</p>
+                <button onclick="openPopup('Cabin Cruise', 'Cruise', '₹46000/Day', '4 Persons', 'Captain Ron', 'https://i.ibb.co/SwPqPyxQ/cabin-cruiser.jpg')">View Details</button>
+            </div>
+        </div>
+        <div class="boat-item">
+            <img src="https://i.ibb.co/z11Mh5V/seadog.jpg">
+            <div class="boat-info">
+                <h3>SeaDog</h3>
+                <p>Type:  Boat</p>
+                <p>Price: ₹16000/per</p>
+                <button onclick="openPopup('SeaDog', 'Boat', '₹16000/per', '30 Persons', 'Captain Ron', 'https://i.ibb.co/z11Mh5V/seadog.jpg')">View Details</button>
+            </div>
+        </div>
+        <div class="boat-item">
+            <img src="https://i.ibb.co/RpPVtN3J/Doubledecker-Yatch.jpg">
+            <div class="boat-info">
+                <h3>Doubledecker yatch</h3>
+                <p>Type: Yatch</p>
+                <p>Price: ₹500/per</p>
+                <button onclick="openPopup('Doubledecker', 'Yatch', '₹500/per', '30 Persons', 'Captain Ron', 'https://i.ibb.co/RpPVtN3J/Doubledecker-Yatch.jpg')">View Details</button>
+            </div>
+        </div>
+        <div class="boat-item">
+            <img src="https://i.ibb.co/dwkHCpgc/small-boat.jpg">
+            <div class="boat-info">
+                <h3>Small Boat</h3>
+                <p>Type: Boat</p>
+                <p>Price: ₹200/per</p>
+                <button onclick="openPopup('Small Boat', 'Boat', '₹200/per', '60 Persons', 'Captain Ron', 'https://i.ibb.co/dwkHCpgc/small-boat.jpg')">View Details</button>
+            </div>
+        </div>
+        <div class="boat-item">
+            <img src="https://i.ibb.co/ZzrzqQct/Banana-Boat.jpg">
+            <div class="boat-info">
+                <h3>Banana Boat</h3>
+                <p>Type: Boat</p>
+                <p>Price: ₹150/per</p>
+                <button onclick="openPopup('Banana Boat', 'Boat', '₹200/per', '5 Persons', 'Captain Ron', 'https://i.ibb.co/ZzrzqQct/Banana-Boat.jpg')">View Details</button>
+            </div>
+        </div>
+
+        <!-- Add the rest of your boats here in the same format -->
+
+
+    </section>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <img id="popup-img" src="" alt="Boat Image">
+            <h3 id="popup-name"></h3>
+            <p><strong>Type:</strong> <span id="popup-type"></span></p>
+            <p><strong>Price:</strong> <span id="popup-price"></span></p>
+            <p><strong>Capacity:</strong> <span id="popup-capacity"></span></p>
+            <p><strong>Captain:</strong> <span id="popup-captain"></span></p>
+
+            <button class="reserve-btn"><a href="booking.html">Reserve</a></button>
+        </div>
+    </div>
+
+    <script>
+        function openPopup(name, type, price, capacity, captain, imgSrc) {
+            document.getElementById("popup-name").innerText = name;
+            document.getElementById("popup-type").innerText = type;
+            document.getElementById("popup-price").innerText = price;
+            document.getElementById("popup-capacity").innerText = capacity;
+            document.getElementById("popup-captain").innerText = captain;
+            document.getElementById("popup-img").src = imgSrc;
+            document.getElementById("popup").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

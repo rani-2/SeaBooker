@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us </title>
+    <link rel="stylesheet" href="contact.css">
+    <script>
+        function validateForm() {
+            let name = document.forms["contactForm"]["name"].value;
+            let phone = document.forms["contactForm"]["phone"].value;
+            let problem = document.forms["contactForm"]["problem"].value;
+            let question = document.forms["contactForm"]["question"].value;
+            let nameRegex = /^[A-Za-z\s]+$/;  
+            let phoneRegex = /^[0-9]{10}$/;  
+            let problemRegex = /^[A-Za-z\s]+$/; 
+            // Name validation
+            if (!name.match(nameRegex)) {
+                alert("Name should contain only alphabets.");
+                return false;
+            }
+
+            // Phone number validation
+            if (!phone.match(phoneRegex)) {
+                alert("Phone number must be exactly 10 digits and contain only numbers.");
+                return false;
+            }
+
+            // Problem description validation
+            if (!problem.match(problemRegex)) {
+                alert("Describe Your Problem should contain only alphabets.");
+                return false;
+            }
+
+            // Predefined question validation
+            if (question === "") {
+                alert("Please select a predefined question.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <p>SeaBooker is ready to provide the right solution according to your needs.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-container">
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>Feel free to reach out to us for any inquiries.</p>
+            <p><strong>Head Office:</strong> Model college, DOMBIVLI</p>
+            <p><strong>Email:</strong> seabooker@gmail.com</p>
+            <p><strong>Phone:</strong> 1244211244</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send us a Message</h2>
+            <form name="contactForm" action="contact.php" method="POST" onsubmit="return validateForm()">
+                <label>Your Name:</label>
+                <input type="text" name="name" required><br>
+            
+                <label>Phone Number:</label>
+                <input type="text" name="phone" required><br>
+            
+                <label>Describe Your Problem:</label>
+                <textarea name="problem" required></textarea><br>
+            
+                <label>Select a Predefined Question:</label>
+                <select name="question" required>
+                    <option value="">--Select an Option--</option>
+                    <option value="Billing Issue">Billing Issue</option>
+                    <option value="Technical Support">Technical Support</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="None of the above">None of the above</option>
+                </select><br>
+            
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SEABOOKER. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,344 @@
+* Color Palette */
+:root {
+    --primary-dark: #012A4A;
+    --primary-medium-dark: #013A63;
+    --primary-medium: #01497C;
+    --primary-medium-light: #014F86;
+    --secondary-dark: #2A6F97;
+    --secondary-medium-dark: #2C7DA0;
+    --secondary-medium: #468FAF;
+    --secondary-medium-light: #61A5C2;
+    --secondary-light: #89C2D9;
+    --accent-light: #A9D6E5;
+}
+/* Color Palette */
+:root {
+    --dark-blue: #012A4A;
+    --medium-blue: #014F86;
+    --light-blue: #2A6F97;
+    --accent-blue: #A9D6E5;
+    --white: #2fcbc1;
+}
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* Navigation Bar Styling */
+/* Basic Navbar Styles */
+/* Navbar Container */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo on left, menu on right */
+    background: #012A4A;
+    padding: 10px 20px;
+}
+
+/* Logo Styling */
+.logo img {
+    height: 80px; /* Adjust size */
+}
+
+/* Navbar List */
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+/* Menu Item */
+.navbar li {
+    position: relative;
+}
+
+/* Menu Links */
+.navbar a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #013A63;
+    list-style: none;
+    top: 100%;
+    right: 0; /* Align dropdown to right */
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid #01497C;
+}
+
+.dropdown-menu li a {
+    padding: 10px 15px;
+    display: block;
+    color: white;
+}
+
+.dropdown-menu li a:hover {
+    background: #014F86;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+.logo a {
+    
+        width: 200px;  /* Adjust the size */
+        height: 200px; /* Adjust the size */
+        border-radius: 50%;  /* This makes the image round */
+        object-fit: cover;  
+}
+
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #caf0f8;
+    color: #03045e;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background: url("https://i.ibb.co/8LLmVx8L/rani-sea.jpg" ) center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(248, 247, 247);
+}
+
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #00b4d8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+/* Login Form */
+.login-form {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    background: rgba(3, 27, 34, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 2;
+}
+
+/* Form Inputs */
+.login-form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #014F86;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+.login-form button {
+    background: #014F86;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-form button:hover {
+    background: #2A6F97;
+}
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #90c4ef;
+}
+
+/* Fleet Section */
+.fleet {
+    padding: 50px 40px;
+    background-color: #0077b6;
+    color: white;
+}
+.fleet-container {
+    display: flex;
+    justify-content: center; /* Center fleet items */
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.next-page-container {
+    text-align: center; /* Centers the button */
+    margin-top: 20px; /* Adds space between fleet section and button */
+}
+
+
+
+.fleet-item {
+    text-align: center;
+    background: white;
+    color: #03045e;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+/* Style for the Next Page Button */
+.next-page-button {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #a2c0df;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(17, 136, 172);
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.next-page-button:hover {
+    background-color: #ade2f5;
+}
+
+.next-page-button .arrow-icon {
+    width: 20px; /* Adjust size of the arrow */
+    margin-left: 50px; /* Space between the text and the arrow */
+    transition: transform 0.3s ease;
+}
+
+.next-page-button:hover .arrow-icon {
+    transform: translateX(5px); /* Arrow moves slightly when hovered */
+}
+
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    background-color: #0077b6;
+    text-align: center;
+}
+
+.services-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    text-align: center;
+    background: #00b4d8;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+/* Login Section */
+.login-section {
+    width: 100%;
+    background: #014F86; /* Your theme color */
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.login-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Form Styling */
+.login-section form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.login-section input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.login-section button {
+    width: 100%;
+    padding: 10px;
+    background: #61A5C2; /* Lighter theme color */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-section button:hover {
+    background: #2A6F97;
+}
+
+
+
+/* Footer */
+.footer {
+    background: #060ad4;
+    color: rgb(38, 61, 192);
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+
+
+
+

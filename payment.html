@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form Widget</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+    
+    </nav>
+    <div class="container">
+        <h2 class="title">PAYMENT FORM WIDGET</h2>
+
+        <div class="payment-method">
+            <h3>Select Payment Method</h3>
+            <div class="methods">
+                <button class="active" onclick="showForm('credit-card')">Credit Card</button>
+                <button onclick="showForm('net-banking')">Net Banking</button>
+                <button onclick="showForm('paypal')">PayPal</button>
+                <button onclick="showForm('debit-card')">Debit Card</button>
+            </div>
+        </div>
+
+        <!-- Credit Card Form -->
+        <div class="form-container" id="credit-card">
+            <h3>Personal Information</h3>
+            <input type="email" placeholder="Email Address">
+            <input type="text" placeholder="First Name">
+
+            <h3>Credit Card Info</h3>
+            <input type="text" placeholder="Name on Card">
+            <input type="text" placeholder="Card Number">
+
+            <div class="card-details">
+                <input type="text" placeholder="Expiration (MM/YYYY)">
+                <input type="text" placeholder="CVV Number">
+            </div>
+
+            <button class="submit-btn">SUBMIT</button>
+            
+            <label class="checkbox">
+                <input type="checkbox"> By checking this box, I agree to the Terms & Conditions & Privacy Policy.
+            </label>
+        </div>
+
+        <!-- Net Banking Form -->
+        <div class="form-container" id="net-banking" style="display: none;">
+            <h2>NetBanking Login</h2>
+            <form>
+                <div class="input-group">
+                    <label for="accountNumber">Account Number</label>
+                    <input type="text" id="accountNumber" name="accountNumber" placeholder="Enter Account Number" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+                <div class="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- PayPal Form -->
+        <div class="form-container" id="paypal" style="display: none;">
+            <h2>PayPal Payment</h2>
+            <input type="email" placeholder="Enter PayPal Email">
+            <button class="submit-btn">Proceed with PayPal</button>
+        </div>
+
+        <!-- Debit Card Form -->
+        <div class="form-container" id="debit-card" style="display: none;">
+            <h3>Personal Information</h3>
+            <input type="email" placeholder="Email Address">
+            <input type="text" placeholder="First Name">
+
+            <h3>Debit Card Info</h3>
+            <input type="text" placeholder="Name on Card">
+            <input type="text" placeholder="Card Number">
+
+            <div class="card-details">
+                <input type="text" placeholder="Expiration (MM/YYYY)">
+                <input type="text" placeholder="CVV Number">
+            </div>
+
+            <button class="submit-btn">SUBMIT</button>
+            
+            <label class="checkbox">
+                <input type="checkbox"> By checking this box, I agree to the Terms & Conditions & Privacy Policy.
+            </label>
+        </div>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>
