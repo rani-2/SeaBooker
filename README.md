@@ -9,16 +9,16 @@ This project is built using HTML, CSS, JavaScript, and PHP
 - Simple and responsive design  
 - Future scope: Add payment gateway
   
-![Homepage]
+Homepage – Main landing page where users can explore available boats.
 <img width="932" height="1191" alt="image" src="https://github.com/user-attachments/assets/c252463d-fad6-4759-b051-58c9e988ce6b" />
 
-![Booking Page](https://ibb.co/wNDBskYp)
+Booking Page – Interface for selecting and booking a boat.
 <img width="980" height="567" alt="image" src="https://github.com/user-attachments/assets/ee8c9de6-14b6-4bbb-8c57-aa46576248c5" />
 
-![admin dashboard](https://ibb.co/Kcc2TRnw)
+Admin Dashboard – Panel for managing bookings and system data.
 <img width="940" height="295" alt="image" src="https://github.com/user-attachments/assets/d6064806-c9d2-4f63-82e5-d75e2555c03e" />
 
-![boat owner sign-in](https://ibb.co/whkHKW1j)
+Boat Owner Sign-in – Login page for boat owners to access their account.
 <img width="940" height="758" alt="image" src="https://github.com/user-attachments/assets/60b57edc-d40e-4593-8409-a84e6a7544ef" />
 
 📌 How to Run
