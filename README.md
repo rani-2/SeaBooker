@@ -24,9 +24,10 @@ Boat Owner Sign-in – Login page for boat owners to access their account.
 📌 How to Run
 1. Clone or download this repository  
 2. Open the `.html` files in any browser  
-3. *(Optional)* If you add PHP/MySQL later, run the project using **XAMPP** or another local server  
+3. If you add PHP/MySQL later, run the project using **XAMPP** or another local server  
 
 
 ⚙️ Tech Stack
 - Frontend: HTML, CSS, JavaScript  
-- Backend (planned): PHP  
+- Backend (planned): PHP
+- Database: MySQL
